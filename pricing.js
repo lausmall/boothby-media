@@ -1,5 +1,5 @@
-var video = ["None", "1 min", "2 min", "3 min", "4 min", "5 min", "6 min", "7 min", "8 min", "9 min", "10 min"]
-var photo = ["None", "5 photos", "10 photos", "15 photos", "20 photos", "25 photos", "30 photos", "35 photos", "40 photos", "45 photos", "50 photos"]
+var video = ["None", "1 min", "2 min", "3 min", "4 min", "5 min"]
+var photo = ["None", "5 photos", "10 photos", "15 photos", "20 photos", "25 photos"]
 
 var sliderVals = {
   slider1: 0,
