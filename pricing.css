@@ -1,6 +1,7 @@
 .navbar {
  font-weight: 500;
  letter-spacing: .05em;
+ background-color: rgb(51, 51, 51);
 }
 
 .home-image {
@@ -48,14 +49,14 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: 700;
-  color: grey;
+  color: rgb(51,51,51);
 }
 
 .rate-description {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 24px;
   margin: 3%;
 }
 
@@ -99,6 +100,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   margin-left: 40px;
+  color: rgb(51,51,51);
 
 }
 
@@ -146,10 +148,25 @@ body {
   align-content: center;
   margin: 10px;
   margin-bottom: 5%;
+  height: 350px;
+}
+
+.price-options li {
+  list-style-type: none;
+  float: none;
 }
 
 .set {
   margin-left: 10%;
+}
+
+.set-price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 30px;
+  margin-left: 25%;
+  color: #207979;
 }
 
 h2 {
@@ -162,20 +179,100 @@ h2 {
 ul {
   font-family: 'Roboto', sans-serif;
   font-weight: 300; 
+  line-height: 2em;
+  font-size: 14px;
 }
 
-.set-price {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+
+.break {
+  height: 100px;
+}
+
+
+
+.contact {
+  background-color: rgb(51,51,51);
+}
+
+.footer {
+  display: block;
+  max-height: 65px;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  margin-left: 30%;
+  align-content: center;
+  background-color: rgb(51,51,51);
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-content: center;
+}
+
+.footer li {
+  float: left;
+  margin-left: 25px;
+}
+
+
+.social {
+  max-height: 65px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+  .price-options {
+    height: 550;
+  }
+
+}
+
+
+@media only screen and (max-width:770px) {
+  .price-options {
+    margin-left: 1px;
+  }
+
+}
+
+
+@media only screen and (max-width:675px) {
+  #other {
+    display: none;
+  }
+
+
+
+
+@media only screen and (max-width:600px) {
+ .price-1 {
+  margin-top: 50px;
+ }
+
+ .price-2 {
+  margin-top: 50px;
+ }
+
+  .price-3 {
+  margin-top: 50px;
+ }
+
+  .price-4 {
+  margin-top: 50px;
+ }
+
+ .price-description {
   text-align: center;
-  font-size: 28px;
-  color: #207979;
+ }
+
+.set {
+  margin-left: 1px;
 }
 
-/*for total prices in mobile view*/
-
-@media only screen and (min-width:750px) {
-   .col-md-2 {
-      line-height: 3.0;
-    }
 }
+
+

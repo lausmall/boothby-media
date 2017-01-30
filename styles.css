@@ -82,7 +82,7 @@ body {
 }
 
 .jumbotron h1 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #ffffff;
   padding-top: 5%;
   padding-bottom: 15px;
@@ -90,7 +90,7 @@ body {
 }
 
 .jumbotron p {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #ffffff; 
   font-size: 20px;
   padding-bottom: 15px;
@@ -109,7 +109,13 @@ body {
 
 .intro {
   background-color: white;
-  padding: 10%;
+  padding: 1% 5% 10% 10%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.intro p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .image-container {
@@ -144,21 +150,47 @@ body {
 
 .img-content h2 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 
 .contact {
-  background-color: #0c1a27;
-  color: white;
-  font-family: 'PT Sans', sans-serif;
+  background-color: rgb(51,51,51);
 }
-
 
 .footer {
   display: block;
-  vertical-align: baseline;
   max-height: 65px;
   align-content: center;
-  margin-left: 40%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 10px;
+  margin-left: 30%;
+  align-content: center;
+  background-color: rgb(51,51,51);
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-content: center;
+}
+
+.footer li {
+  float: left;
+  margin-left: 25px;
+}
+
+
+.social {
+  max-height: 65px;
+}
+
+@media only screen and (max-width:675px) {
+  #other {
+    display: none;
+  }
+
 }
