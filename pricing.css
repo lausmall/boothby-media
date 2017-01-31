@@ -52,6 +52,12 @@ body {
   color: rgb(51,51,51);
 }
 
+.intro p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+
 .rate-description {
   font-family: 'Roboto', sans-serif;
   text-align: center;

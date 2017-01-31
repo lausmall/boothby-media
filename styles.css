@@ -109,13 +109,14 @@ body {
 
 .intro {
   background-color: white;
-  padding: 1% 5% 10% 10%;
+  padding: 5% 5% 10% 10%;
   font-family: 'Roboto', sans-serif;
 }
 
 .intro p {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 26px;
+  font-weight: 300;
 }
 
 .image-container {
