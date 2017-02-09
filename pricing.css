@@ -148,14 +148,6 @@ body {
   padding-bottom: 50px;
 }
 
-.price-options {
-  border: solid grey 3px; 
-  padding-bottom: 50px;
-  align-content: center;
-  margin: 10px;
-  margin-bottom: 5%;
-  height: 350px;
-}
 
 .price-options li {
   list-style-type: none;
@@ -212,30 +204,73 @@ ul {
   background-color: rgb(51,51,51);
 }
 
-.footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  align-content: center;
+
+footer {
+  background:#363b3f;
+  padding-bottom: 20px;
+ }
+
+footer p {
+  font-size:12px;
+  color:#fff;
+  text-align:center;
+  padding-top: 20px;
 }
 
-.footer li {
-  float: left;
-  margin-left: 25px;
+footer ul {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-left: 0px;
+}
+
+footer li {
+    display: inline-block;
+    margin: 4px;
+}
+
+footer li a {
+    display: block;
+    text-decoration: none;
+    border-bottom: medium none;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s, all 1s ease 0s;
+    background: #444749;
+}
+
+footer .facebook:hover {
+  background-color:#365397;
+}
+footer .twitter:hover {
+  background-color:#00a9f1;
+}
+footer .email:hover {
+  background-color:#e0452c;
+}
+footer .youtube:hover {
+  background-color:#ff3333;
+}
+footer .instagram:hover {
+  background-color:#396d9a;
 }
 
 
-.social {
-  max-height: 65px;
-}
+@media only screen and (max-width:675px) {
+  .facebook {
+    display: none;
+  }
 
-@media only screen and (min-width: 768px) and (max-width: 1100px) {
-  .price-options {
-    height: 550;
+  .twitter {
+    display: none;
+  }
+
+ .snapchat {
+    display: none;
   }
 
 }
+
 
 
 @media only screen and (max-width:770px) {
