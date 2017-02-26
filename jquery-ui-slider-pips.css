@@ -24,8 +24,8 @@
 /* position each pip absolutely just below the default slider */
 /* and also prevent accidental selection */
 .ui-slider-pips .ui-slider-pip {
-  width: 2em;
-  height: 1em;
+  width: 1em;
+  height: .5em;
   line-height: 1em;
   position: absolute;
   font-size: 0.8em;
