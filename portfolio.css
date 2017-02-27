@@ -211,6 +211,7 @@ div h1 {
   font-weight:500;
   font-size:50px;
   padding-top: 500px;
+  margin-left: 13%;
 }
 
 .row {
@@ -229,7 +230,10 @@ iframe {
   align-content: center;
 }
 
-
+.row {
+  align-content: center;
+  margin-left: 13%;
+}
 
 .btn.outline {
     background: none;
