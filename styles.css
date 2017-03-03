@@ -10,6 +10,10 @@
   background-repeat: no-repeat;
 }
 
+.grow:hover { 
+  transform: scale(1.2); 
+}
+
 .logo {
   display: block;
   vertical-align: baseline;
@@ -30,7 +34,7 @@
   margin-right: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -43,7 +47,7 @@
   margin-top: 40px;
   font-style: italic;
   color: #ffffff !important;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 200;
 }
 
@@ -72,7 +76,12 @@ body {
   padding: 15px;
   width: 185px;
   transition: all .2s;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.work:hover
+{
+  box-shadow: inset 0 0 0 5px white;
 }
 
 .jumbotron {
@@ -82,7 +91,7 @@ body {
 }
 
 .jumbotron h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   color: #ffffff;
   padding-top: 5%;
@@ -91,7 +100,7 @@ body {
 }
 
 .jumbotron p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #ffffff; 
   font-size: 20px;
   padding-bottom: 15px;
@@ -112,18 +121,18 @@ body {
 .intro {
   background-color: white;
   padding: 5% 5% 10% 10%;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 
 }
 
 .intro h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 26px;
   font-weight: 700;
 }
 
 .intro p {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 26px;
   font-weight: 300;
 }

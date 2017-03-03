@@ -1,87 +1,41 @@
-var video = ["None", "1 min", "2 min", "3 min", "4 min", "5 min"]
-var photo = ["None", "5 photos", "10 photos", "15 photos", "20 photos", "25 photos"]
+//this is where we apply opacity to the arrow
+$(window).scroll( function(){
 
-var sliderVals = {
-  slider1: 0,
-  slider2: 0,
-  slider3: 0,
-  slider4: 0
-};
+  //get scroll position
+  var topWindow = $(window).scrollTop();
+  //multipl by 1.5 so the arrow will become transparent half-way up the page
+  var topWindow = topWindow * 1.5;
+  
+  //get height of window
+  var windowHeight = $(window).height();
+      
+  //set position as percentage of how far the user has scrolled 
+  var position = topWindow / windowHeight;
+  //invert the percentage
+  position = 1 - position;
 
-$(".slider-1")
-                    
-    .slider({ 
-        min: 0, 
-        max: video.length-1
-    })
-                    
-    .slider("pips", {
-        rest: "label",
-        labels: video
-    })
-    .on( "slidechange", function(event, ui) {
-      sliderVals.slider1 = ui.value * 185;
-      $('.price-1').text('Total = $' + ui.value * 185 + '.00');
-      addTotal();
-    });
+  //define arrow opacity as based on how far up the page the user has scrolled
+  //no scrolling = 1, half-way up the page = 0
+  $('.arrow-wrap').css('opacity', position);
 
-$(".slider-2")
-                    
-    .slider({ 
-        min: 0, 
-        max: photo.length-1, 
-    })
-                    
-    .slider("pips", {
-        rest: "label",
-        labels: photo
-    });
-
-$( ".slider-2" ).on( "slidechange", function(event, ui) {
-  sliderVals.slider2 = ui.value * 25;
-  $('.price-2').text('Total = $' + ui.value * 25 + ".00");
-  addTotal();
 });
 
-$(".slider-3")
-                    
-    .slider({ 
-        min: 0, 
-        max: video.length-1, 
-    })
-                    
-    .slider("pips", {
-        rest: "label",
-        labels: video
-    });
 
-$( ".slider-3" ).on( "slidechange", function(event, ui) {
-  sliderVals.slider3 = ui.value * 100;
-  $('.price-3').text('Total = $' + ui.value * 100 + ".00");
-  addTotal();
+
+
+//from css-tricks for smooth scrolling:
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
-
-$(".slider-4")
-                    
-    .slider({ 
-        min: 0, 
-        max: photo.length-1, 
-    })
-                    
-    .slider("pips", {
-        rest: "label",
-        labels: photo
-    });
-
-$( ".slider-4" ).on( "slidechange", function(event, ui) {
-  sliderVals.slider4 = ui.value * 20;
-  $('.price-4').text('Total = $' + ui.value * 20 + ".00");
-  addTotal();
-});
-
-function addTotal() {
-  var total = sliderVals.slider1 + sliderVals.slider2 + sliderVals.slider3 + sliderVals.slider4
-  console.log(total)
-  $("#final-price").text("Total=$" + total + ".00")
-}
 
