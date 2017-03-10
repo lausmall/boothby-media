@@ -60,6 +60,10 @@ html, body {
 }
  
 
+.grow:hover { 
+  transform: scale(1.2); 
+}
+
 body {
   margin:0;
   background:white;
