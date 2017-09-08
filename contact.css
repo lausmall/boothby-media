@@ -38,7 +38,7 @@ html, body {
   margin-right: 15px;
   margin-top: 25px;
   margin-bottom: 25px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
@@ -50,7 +50,7 @@ html, body {
   margin-top: 40px;
   font-style: italic;
   color: #ffffff !important;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 00;
 }
 
@@ -69,7 +69,7 @@ body {
   background:white;
   font-size:1.3em;
   color:#333;
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 section {
@@ -191,7 +191,7 @@ div h1 {
   font-family: 'Quicksand', sans-serif;
   font-weight:500;
   font-size:50px;
-  margin-left: 13%;
+
 }
 
 
@@ -208,7 +208,8 @@ p {
   font-size: 18px;
   font-weight: 300;
   padding-bottom: 20px;
-  margin-left: 14%;
+  margin-left:20px;
+  margin-right: 20px;
 }
 
 
@@ -230,20 +231,13 @@ p {
     box-shadow: none;
 }
 
-button {
-  margin-left: 2%;
-  width: 405px;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 60px;
-
-}
 
 .spacer {
   height: 15px;
 }
 
 .spacer2 {
-  height: 550px;
+  height: 250px;
 }
 
 
@@ -251,17 +245,19 @@ button {
  text-align: center;
 }
 
-
 .griffin {
-  margin-left: 40%;
+  margin-left: 24%;
 }
 
 .col-md-6 h2 {
-  margin-left: 55%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 50px;
 }
 
 .col-md-6 h3 {
-  margin-left: 47%;
+  text-align: center;
+  margin-bottom: 10%;
 }
 
 .col-md-6 img {
@@ -270,78 +266,12 @@ button {
   border-radius: 50px;
 }
 
-.contact {
-  margin-bottom: 35px;
-  margin-left: 32%;
+.contact h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
 }
 
-/*form*/
-
- #contact{
-    padding:10px 0 10px;
-  }
-
-  .contact-text{
-    margin:45px auto;
-  }
-
-  .mail-message-area{
-    width:100%;
-    padding:0 15px;
-  }
-
-  .mail-message{
-    width: 100%;
-    background:rgba(255,255,255, 0.8) !important;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    transition: all 0.7s;
-    margin:0 auto;
-    border-radius: 0;
-  }
-
-  .not-visible-message{
-    height:0px;
-    opacity: 0;
-  }
-
-  .visible-message{
-    height:auto;
-    opacity: 1;
-    margin:25px auto 0;
-  }
-
-/* Input Styles */
-
-  .form{
-    width: 100%;
-    padding: 15px;
-    background:#f8f8f8;
-    border:1px solid rgba(0, 0, 0, 0.075);
-    margin-bottom:25px;
-    color:#727272 !important;
-    font-size:13px;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-
-  .form:hover{
-    border:1px solid #8BC3A3;
-  }
-
-  .form:focus{
-    color: white;
-    outline: none;
-    border:1px solid #8BC3A3;
-  }
-
-  .textarea{
-    height: 200px;
-    max-height: 200px;
-    max-width: 100%;
-  }
-  
 /* Generic Button Styles */
 
   .button{
@@ -349,7 +279,7 @@ button {
     background:#0A5175;
     display: block;
     width:120px;
-    margin:10px 0 0px 0;
+    margin:0px 0 0px 0;
     border-radius:3px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -369,7 +299,7 @@ button {
 /* Send Button Styles */
 
   .form-btn{
-    width:380px;
+    width:280px;
     display: block;
     height: auto;
     padding:15px;
@@ -397,8 +327,12 @@ button {
   .form-btn:active{
     opacity: 0.9;
   }
-center{
-  margin-top:330px;
+
+.form-btn {
+  margin-left: 35%;
+}
+
+
 }
 input {
     position: relative;
@@ -471,4 +405,33 @@ footer .instagram:hover {
     display: none;
   }
 
+}
+
+@media only screen and (max-width: 790px) {
+  .griffin {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .griffin {
+    margin-left: 17%;
+  }
+
+  .form-btn {
+    margin-left: 15%;
+  }
+}
+
+
+@media only screen and (max-width: 321px) {
+  .form-btn {
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .navbar-text {
+    display: none;
+  }
 }

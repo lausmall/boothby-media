@@ -92,7 +92,7 @@ body {
 
 .jumbotron h1 {
   font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   color: #ffffff;
   padding-top: 5%;
   padding-bottom: 15px;
@@ -182,7 +182,7 @@ body {
 
 footer {
   background:#363b3f;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
  }
 
 footer p {
@@ -244,4 +244,10 @@ footer .instagram:hover {
     display: none;
   }
 
+}
+
+@media only screen and (max-width:400px) {
+  .navbar-text {
+    display: none;
+  }
 }

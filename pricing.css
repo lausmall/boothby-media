@@ -192,15 +192,63 @@ body {
   text-align: center;
   font-weight: 700;
   color: #4c4c4c;
-  font-size: 72px;
+  font-size: 50px;
 }
 
 .intro p {
   font-family: 'Quicksand', sans-serif;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 20px;
   color: #4c4c4c;
+  padding-bottom: 50px;
 }
+
+
+/* intro styles */ 
+.intro {
+max-width: 800px;
+margin: 80px auto;
+padding: 15px;
+text-align: center; }
+.intro h1 {
+font-size: 20px;
+text-transform: uppercase;
+color: #456ba8; }
+.divider {
+position: relative;
+border-bottom: 2px solid #f0f0f0;
+margin-bottom: 60px;
+margin-top: 10px; }
+.divider:before {
+position: absolute;
+content: '';
+width: 30px;
+height: 30px;
+border: 1px solid #f0f0f0;
+left: 50%;
+margin-left: -15px;
+top: 50%;
+background: #fff;
+margin-top: -15px;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg); }
+.divider:after {
+position: absolute;
+content: '';
+width: 20px;
+height: 20px;
+border: 2px solid #456ba8;
+left: 50%;
+margin-left: -10px;
+top: 50%;
+background: #456ba8;
+margin-top: -10px;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg); }
 
 .rate-description {
   font-family: 'Quicksand', sans-serif;
@@ -278,9 +326,9 @@ ul {
 
 .pricing {
   text-align: center;
-  border: 1px solid #f0f0f0;
+  border: 3px solid #f0f0f0;
   color: #777;
-  font-size: 14px;
+  font-size: 20px;
   padding-left: 0;
   margin-bottom: 30px;
   font-family: 'Quicksand', sans-serif;
@@ -340,11 +388,17 @@ ul {
   align-content: center;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .more p {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   color: #999;
+  margin-bottom: 50px;
+  font-weight: 500;
 }
 
 /* pricing color */
@@ -440,4 +494,10 @@ footer .instagram:hover {
     display: none;
   }
 
+}
+
+@media only screen and (max-width:400px) {
+  .navbar-text {
+    display: none;
+  }
 }
